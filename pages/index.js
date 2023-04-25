@@ -55,22 +55,24 @@ function Home({ explore, anywhere }) {
       </main>
 
 
-      <Footer />
+      <Footer /> 
     </div>
   )
 }
 
+{/*
+Here for the Home page we will use static rendering (cause not changing a lot!) Incremental Static Regeneration (ISR)
 
-// Here for the Home page we will use static rendering (cause not changing a lot!) Incremental Static Regeneration (ISR)
+This function gets called at build time on server-side.
+It may be called again, on a serverless function, if
+revalidation is enabled and a new request comes in
+*/}
 
-// This function gets called at build time on server-side.
-// It may be called again, on a serverless function, if
-// revalidation is enabled and a new request comes in
-export async function getStaticProps() {
+export async function getStaticProps() { 
   const exploreData = await fetch('https://www.jsonkeeper.com/b/4G1G')
   const explore = await exploreData.json()
 
-  // LiveAnywhere EndPoint
+{/* LiveAnywhere EndPoint */}
   const LiveAnywhereData = await fetch('https://www.jsonkeeper.com/b/VHHT')
   const anywhere = await LiveAnywhereData.json()
 

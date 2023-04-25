@@ -5,7 +5,7 @@ function LargeCard({img, title, description, buttonText}) {
   return (
     <div className='cursor-pointer relative'>
         <div className="bannerWrap relative h-96  ">
-            {/* <img src={img} alt={title} /> */}
+           
             <Image src={img} fill
             style={{objectFit:"cover"}}
             className='rounded-2xl'

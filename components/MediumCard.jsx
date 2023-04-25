@@ -8,7 +8,7 @@ function MediumCard({img, title}) {
             <Image src={img}
             alt={title}
              fill style={{objectFit:"cover"}} className="rounded-xl" />
-            {/* <img src={img} alt={title} /> */}
+        
         </div>
         <h3 className="text-2xl mt-3">{title}</h3>
         
