@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 
 
 
-export default function Home({ explore, anywhere }) {
+function Home({ explore, anywhere }) {
   return (
     <div>
       {console.log(anywhere)}
@@ -85,4 +85,7 @@ export async function getStaticProps() {
     // - At most once every 10 seconds
 
   }
-}
+} 
+
+
+export default Home

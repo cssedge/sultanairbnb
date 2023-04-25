@@ -5,7 +5,8 @@ function HomeBanner() {
   return (
     <div className="relative flex items-center justify-center h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
 
-        <Image src="/family-on-beach.jpg" 
+        <Image src="/family-on-beach.jpg"
+        alt='sultanAirbnb'  
         fill
         style={{objectFit:"cover"}} />
         {/* <img src="/family-on-beach.jpg" alt="" style={{objectFit:"cover"}} /> */}

@@ -21,7 +21,7 @@ function Header() {
         key: 'selection',
       };
 
-      const handleSelect =  (ranges) => {
+      const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
         setEndDate(ranges.selection.endDate);
       }
@@ -30,7 +30,7 @@ function Header() {
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
         {/* left */}
         <div className="relative flex items-center h-10 cursor-pointer my-auto">
-            <Image src="/logo.svg" height={40} width={128} /> 
+            <Image src="/logo.svg" height={40} width={128} alt='sultanAirbnb' /> 
             {/* <img src="/logo.svg" alt="" /> */}
         </div>
 
