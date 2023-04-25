@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 function HomeBanner() {
   return (
@@ -14,7 +13,7 @@ function HomeBanner() {
         <div className="z-10 font-semibold flex flex-col">
             Not sure where to go? perfect. 
             <button className="text-purple-500 bg-white bg-opacity-70 hover:bg-opacity-100 active:scale-90 duration-150 rounded-full shadow-md p-2 m-2"> 
-                I'm flexible
+                Show Recommendations
             </button>
         </div>
     </div>
