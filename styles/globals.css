@@ -16,6 +16,10 @@
   }
 }
 
-body {
-  
+
+/* Custom Tailwind utility Classes */
+@layer components {
+  .filterBtns {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 font-semibold duration-100 ease-out;
+  }
 }
