@@ -9,6 +9,7 @@ import 'react-date-range/dist/theme/default.css';
 
 import { DateRangePicker } from 'react-date-range';
 import Link from 'next/link';
+import Search from './../pages/search';
 
 
 
@@ -34,8 +35,17 @@ function Header() {
     const resetSearch = ()=> {
         setSearchInput('');
     }
+
     const fireSearch = () => {
-        router.push("/search");
+        router.push({
+            pathname: "/search",
+            query: {
+                location: searchInput,
+                startDate: startDate.toISOString(),
+                endDate:endtDate.toISOString(),
+                noOfGuests: noOfGuests,
+            }
+        });
     }
 
     return (
