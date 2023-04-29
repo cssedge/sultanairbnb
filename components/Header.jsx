@@ -14,7 +14,7 @@ import Search from './../pages/search';
 
 
 
-function Header() {
+function Header({placeholder}) {
     const [searchInput, setSearchInput] = useState('');
     const [startDate, setStartDate] = useState(new Date());
     const [endtDate, setEndDate] = useState(new Date());
@@ -63,7 +63,9 @@ function Header() {
                 <input
                     value={searchInput}
                     onChange={(e) => setSearchInput(e.target.value)}
-                    type="text" placeholder="Start your search" className="bg-transparent outline-none flex-grow text-gray-600 placeholder-gray-400" />
+                    type="text"
+                    placeholder={ placeholder? placeholder : "Start your search" } 
+                    className="bg-transparent outline-none flex-grow text-gray-600 placeholder-gray-400" />
 
 
                 <span className="bg-red-400 rounded-full hidden md:inline-flex cursor-pointer">

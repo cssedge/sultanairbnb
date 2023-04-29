@@ -7,6 +7,9 @@ const nextConfig = {
       'jsonkeeper.com',
       'a0.muscache.com'
     ],
+  },
+  env: {
+    mapbox_key: 'pk.eyJ1IjoieWVtYXJpbSIsImEiOiJjbGd6ZnNiODEwNHR3M3BvZTJ6cWZwaWZkIn0.D825qWA5nDDQswIHvdEcLg'
   }
 }
 
